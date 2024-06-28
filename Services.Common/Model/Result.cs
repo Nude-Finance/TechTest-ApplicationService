@@ -18,7 +18,6 @@ public class Result
     public static Result Failure(Error error) => new(false, error);
     
     public static Result<T> Failure<T>(Error error) => new(false, error, default);
-
 }
 
 public class Result<TValue>(bool isSuccess, Error error, TValue value) : Result(isSuccess, error)
