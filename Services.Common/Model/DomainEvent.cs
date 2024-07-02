@@ -10,6 +10,4 @@ public record KycFailed(Guid UserId, Guid ReportId) : DomainEvent;
 
 public record ApplicationCompleted(Guid ApplicationId) : DomainEvent;
 
-public record ApplicationFailed(Guid ApplicationId) : DomainEvent;
-
-
+public record ApplicationFailed(Guid ApplicationId, ApplicationFailureReason Reason) : DomainEvent;
