@@ -2,7 +2,7 @@
 
 public class ProductOneTests
 {
-    public Task ApplicationFailed_is_published_when_Applicant_is_too_young()
+    public Task Application_for_ProductOne_creates_Investor_in_AdministratorOne()
     {
         throw new NotImplementedException();
     }
